@@ -1,0 +1,15 @@
+body { 
+  width: 420px; 
+  margin: 0; 
+  padding: 10px; 
+  font-family: sans-serif; 
+}
+
+input { 
+  width: 95%; 
+  padding: 8px; 
+  font-size: 16px; 
+  border-radius: 6px; 
+  border: 1px solid #ccc; 
+}
+    

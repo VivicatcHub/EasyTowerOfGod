@@ -1,0 +1,50 @@
+{
+    "manifest_version": 3,
+    "name": "TOG reader",
+    "version": "1.1.5",
+    "description": "Let's read Tower of God !",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "permissions": [
+        "windows",
+        "tabs",
+        "commands",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://www.webtoons.com/*",
+        "https://towerofgod.fandom.com/*",
+        "<all_urls>"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://www.webtoons.com/*"],
+            "css": ["styles.css"]
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+            "default_popup": "popup.html",
+            "default_icon": {
+            "16": "icon16.png",
+            "48": "icon48.png",
+            "128": "icon128.png"
+        }
+    },
+    "web_accessible_resources": [
+        {
+            "resources": ["popup.html", "popup.js", "popup.css"],
+            "matches": ["https://www.webtoons.com/*", "https://towerofgod.fandom.com/*"]
+        }
+    ],
+    "commands": {
+        "open-popup": {
+            "description": "Open Tower of God search popup"
+        }
+    }
+}
