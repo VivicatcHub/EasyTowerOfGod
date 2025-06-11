@@ -26,7 +26,7 @@ In the meantime, here’s how to install it manually:
 git clone git@github.com:VivicatcHub/EasyTowerOfGod.git
 ```
 
-1. Open chrome [extensions](chrome://extensions/)
+1. Open chrome://extensions/
 2. Enable **Developer mode** (top right)
 3. Click **Load unpacked** and select the cloned folder
 
